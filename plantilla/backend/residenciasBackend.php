@@ -4,8 +4,8 @@ include "../assets/config.php";
 $indicador = isset($_POST['ind']) ? $_POST['ind'] : (!empty($_GET['ind']) ? $_GET['ind'] : "");
 
 // Mostrar todos los errores
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 // Leer datos de una residencia específica con INNER JOIN para traer el nombre de la torre
 if ($indicador == "1") {

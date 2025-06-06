@@ -139,8 +139,8 @@ if ($indicador == "votacion3") {
 
 //Insertar Producto
 if ($indicador == "3") {
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+    // error_reporting(E_ALL);
+    // ini_set('display_errors', 1);
     try {
         $nom_producto = isset($_POST['nom_producto']) ? $_POST['nom_producto'] : "";
         $idCategoria = isset($_POST['categoria']) ? $_POST['categoria'] : "";
@@ -278,8 +278,8 @@ if ($indicador == "3") {
 
 // Editar Producto
 if ($indicador == "4") {
-    error_reporting(E_ALL);
-    ini_set('display_errors', 1);
+    // error_reporting(E_ALL);
+    // ini_set('display_errors', 1);
     try {
         // Recuperar datos del formulario
         $id = isset($_POST['id']) ? $_POST['id'] : "";

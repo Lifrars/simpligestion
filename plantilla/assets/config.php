@@ -1,29 +1,42 @@
 <?php
-//Datos de conexion a la base de datos/
-//define('DB_HOST', '10.31.66.6');
-// !servidor
-define('DB_HOST', 'localhost');
-define('DB_USER', 'bhhurjmu_ppiuserbd');
-define('DB_PASS', 'GX2tKgrZl5;k');
-define('DB_NAME', 'bhhurjmu_ppidata'); //Nombre de la base de datos
-// !bases de datos
-define('DB_NAME2', 'bhhurjmu_ppidata'); //Nombre de la base de datos de imagenes
+// Visualización de errores
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
-// !configuracion de dsn para las diferentes bases de datos
-$DSNcredimas = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
-// !creacion de instancias
-// si tenemos un error en credimas bases de datos
-try {
-	$datappi = new PDO($DSNcredimas, DB_USER, DB_PASS);
+// Datos de conexión Oracle como SYSDBA
+if (!defined('DB_HOST')) define('DB_HOST', '34.44.141.62');
+if (!defined('DB_PORT')) define('DB_PORT', '1521');
+if (!defined('DB_SERVICE')) define('DB_SERVICE', 'xepdb1');
+if (!defined('DB_USER')) define('DB_USER', 'SYS');
+if (!defined('DB_PASS')) define('DB_PASS', '12345');
+if (!defined('DB_SCHEMA')) define('DB_SCHEMA', 'US_PPI');
 
-} catch (PDOException $error) {
-	echo "<p style= 'font-family: system-ui;'>Error en la conexion de bases de datos de pos <strong style='color : red;'> " . $error->getMessage() . " </strong> Revisa la configuración</p>";
-	echo "<br>";
+// Esquema (si trabajas sobre otro usuario)
+if (!defined('DB_SCHEMA')) define('DB_SCHEMA', 'US_PPI');
+
+// String de conexión TNS
+$DSNoracle = "(DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = " . DB_HOST . ")(PORT = " . DB_PORT . "))
+    (CONNECT_DATA = (SERVICE_NAME = " . DB_SERVICE . "))
+)";
+
+// Conexión principal como SYSDBA
+$datappi = @oci_connect(DB_USER, DB_PASS, $DSNoracle, null, OCI_SYSDBA);
+
+if (!$datappi) {
+    $e = oci_error();
+    echo "<p style='font-family: system-ui;'>❌ Error en la conexión SYSDBA (datappi): <strong style='color:red'>" . htmlentities($e['message'], ENT_QUOTES) . "</strong></p><br>";
+} else {
+    // echo "<p style='font-family: system-ui;'>✅ Conexión Oracle SYSDBA (datappi) exitosa</p>";
 }
-try{
-	$datappi2 = new PDO($DSNcredimas, DB_USER, DB_PASS);
 
-} catch (PDOException $error) {
-	echo "<p style= 'font-family: system-ui;'>Error en la conexion de bases de datos de pos <strong style='color : red;'> " . $error->getMessage() . " </strong> Revisa la configuración</p>";
-	echo "<br>";
+// Segunda conexión (si se requiere otra instancia también como SYSDBA)
+$datappi2 = @oci_connect(DB_USER, DB_PASS, $DSNoracle, null, OCI_SYSDBA);
+
+if (!$datappi2) {
+    $e = oci_error();
+    echo "<p style='font-family: system-ui;'>❌ Error en la conexión SYSDBA (datappi2): <strong style='color:red'>" . htmlentities($e['message'], ENT_QUOTES) . "</strong></p><br>";
+} else {
+    // echo "<p style='font-family: system-ui;'>✅ Conexión Oracle SYSDBA (datappi2) exitosa</p>";
 }
+?>

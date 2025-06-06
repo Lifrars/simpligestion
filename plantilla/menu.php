@@ -1,10 +1,11 @@
 <?php
 
 
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 include "auth/logincheck.php";
 include "assets/config.php";
-// include "auth/logincheck.php";
 
 $idPerfil = $_SESSION['pi']['act_idPerfil'];
 $id = $_SESSION['pi']['act_id'];

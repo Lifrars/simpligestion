@@ -1,6 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// error_reporting(E_ALL);
 
 include "../assets/config.php"; // Suponiendo que config.php define las constantes de la base de datos
 session_start();

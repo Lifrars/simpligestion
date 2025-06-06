@@ -1,14 +1,26 @@
 <?php
-define('DB_HOST', 'localhost');
-define('DB_USER', 'bhhurjmu_ppiuserbd');
-define('DB_PASS', 'GX2tKgrZl5;k');
-define('DB_NAME', 'bhhurjmu_ppidata');
+// Definir constantes para Oracle
+if (!defined('DB_HOST')) define('DB_HOST', '34.44.141.62');
+if (!defined('DB_PORT')) define('DB_PORT', '1521');
+if (!defined('DB_SERVICE')) define('DB_SERVICE', 'xepdb1');
+if (!defined('DB_USER')) define('DB_USER', 'SYS');
+if (!defined('DB_PASS')) define('DB_PASS', '12345');
+if (!defined('DB_SCHEMA')) define('DB_SCHEMA', 'US_PPI');
 
-$con = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-mysqli_set_charset($con, "utf8");
+// Cadena de conexión (DSN)
+$dsn = "(DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = " . DB_HOST . ")(PORT = " . DB_PORT . "))
+    (CONNECT_DATA = (SERVICE_NAME = " . DB_SERVICE . "))
+)";
 
+// Conectar como SYSDBA
+$con = @oci_connect(DB_USER, DB_PASS, $dsn, null, OCI_SYSDBA);
+
+// Validar conexión
 if (!$con) {
-	die("<h2 style='text-align:center;color:red;'>Error de conexión: " . mysqli_connect_error() . "</h2>");
+    $e = oci_error();
+    die("<h2 style='text-align:center;color:red;'>Error de conexión a Oracle: " . htmlentities($e['message'], ENT_QUOTES) . "</h2>");
 } else {
-	// echo "<h2 style='text-align:center;color:green;'>Conexión exitosa</h2>";
+    // echo "<h2 style='text-align:center;color:green;'>Conexión exitosa a Oracle</h2>";
 }
+?>
