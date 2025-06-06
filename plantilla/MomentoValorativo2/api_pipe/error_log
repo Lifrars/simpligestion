@@ -1,0 +1,54 @@
+[17-Oct-2024 12:26:22 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:26:22 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:26:22 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required 'cnxpdo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:27:00 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:27:00 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:27:00 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required 'cnxpdo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:27:47 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:27:47 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:27:47 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required 'cnxpdo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:32:45 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:32:45 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:32:45 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required 'cnxpdo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:00 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:00 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:00 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required 'cnxpdo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:00 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:00 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:00 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required 'cnxpdo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:00 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:00 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:00 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required 'cnxpdo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:18 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:18 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:18 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required 'cnxpdo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:28 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:28 America/New_York] PHP Warning:  require(cnxpdo.php): Failed to open stream: No such file or directory in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
+[17-Oct-2024 12:52:28 America/New_York] PHP Fatal error:  Uncaught Error: Failed opening required 'cnxpdo.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/bhhurjmu/ppi.miclickderecho.com/plantilla/MomentoValorativo2/api_pipe/api.php on line 9
